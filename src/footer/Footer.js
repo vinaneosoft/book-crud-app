@@ -1,8 +1,14 @@
+import './footer.css';
+export function Footer({mainHeading, xyz}){
+ const headingStyle={
+    color:'red',
+    textTransform:'uppercase'
+ }
 
-export function Footer(){
     return (
-        <footer>
-             <h1>FOOTER COMPONENT</h1>
+        <footer className="myFooter">
+             <h4 style={headingStyle}>footer component</h4>
+             <h5>{mainHeading}</h5>
         </footer>   
    
     );
