@@ -5,6 +5,10 @@ import { Context } from "../App";
 export function Navbar(props){
   let data=useContext(Context);
   let inputType="text";
+
+  let year=1988;
+
+
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
@@ -31,6 +35,8 @@ export function Navbar(props){
             </form>
           </div>
         </div>
+       {/*  <button onClick={()=>props.getYear(year)}>PASS YEAR TO PARENT</button> */}
+       <div>{props.getYear(year)}</div> {/* it will get called on every UI re-render */}
       </nav>
     );
 }
